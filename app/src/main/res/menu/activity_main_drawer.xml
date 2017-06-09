@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_manage_student"
+            android:title="Manage Student">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item android:id="@+id/sub_add_student"
+                    android:title="Add Student"/>
+                <item android:id="@+id/sub_list_students"
+                    android:title="List Students"/>
+                <item android:id="@+id/sub_excel_upload"
+                    android:title="Excel Upload"/>
+                </group>
+            </menu>
+        </item>
+        <item android:id="@+id/nav_manage_guidian"
+            android:title="Manage Guardian">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item android:id="@+id/nav_add_guardian"
+                        android:title="Add Guardian"/>
+                    <item android:id="@+id/nav_list_guardians"
+                        android:title="List Guardians"/>
+                    <item android:id="@+id/excel_upload"
+                        android:title="Excel Upload"/>
+                </group>
+            </menu>
+        </item>
+        <item android:title="Manage Result">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item android:id="@+id/nav_behavioural"
+                        android:title="Behavioural"/>
+                    <item android:id="@+id/nav_continuous_assessment"
+                        android:title="Continuous Assessments"/>
+                    <item android:id="@+id/nav_compute_result"
+                        android:title="Compute Result"/>
+                    <item android:id="@+id/nav_compute_summary_total"
+                        android:title="Compute Summary Total"/>
+                    <item android:id="@+id/nav_compute_summary_report"
+                        android:title="Compute Summary Report"/>
+                </group>
+            </menu>
+        </item>
+
+    </group>
+
+</menu>
